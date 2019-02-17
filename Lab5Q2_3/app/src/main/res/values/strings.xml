@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab5Q2_3</string>
+    <string-array name="destinations">
+        <item>Kolkata</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Hyderabad</item>
+    </string-array>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="6">
+
+        <TextView
+            android:padding="8dp"
+            android:text="Source"/>
+        <Spinner
+            android:padding="8dp"
+            android:id="@+id/spin_source"/>
+        <TextView
+            android:padding="8dp"
+            android:text="Destination"/>
+        <Spinner
+            android:padding="8dp"
+            android:id="@+id/spin_dest" />
+        <Button
+            android:padding="8dp"
+            android:text="Set date"
+            android:onClick="setJourneyDate"/>
+        <TextView
+            android:id="@+id/date_textview"
+            android:padding="8dp"
+            android:text="date"/>
+        <Button
+            android:padding="8dp"
+            android:text="Set time"
+            android:onClick="setJourneyTime"/>
+        <TextView
+            android:id="@+id/time_textview"
+            android:padding="8dp"
+            android:text="time"/>
+        <TextView
+            android:padding="8dp"
+            android:text="Tatkal"/>
+        <ToggleButton
+            android:id="@+id/tatkal_toggle" />
+        <Button
+            android:text="clear"
+            android:onClick="reset"/>
+        <Button
+            android:text="submit"
+            android:onClick="submit"/>
+    </GridLayout>
+
+</LinearLayout>
